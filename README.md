@@ -21,6 +21,12 @@ E.g installation on a Linux AMD64 host
 ## Usage
 
 ```hcl-terraform
+provider "neo4j" {
+  username = "neo4j"  
+  password = "myneo4j"
+  connection_uri = "neo4j://localhost:7687" 
+}
+
 resource "neo4j_user" "user" {
   user = "myuser"
 }
