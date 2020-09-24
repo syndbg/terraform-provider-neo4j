@@ -25,6 +25,7 @@ provider "neo4j" {
   username = "neo4j"  
   password = "myneo4j"
   connection_uri = "neo4j://localhost:7687" 
+  realm = ""
 }
 
 resource "neo4j_user" "user" {
