@@ -31,4 +31,8 @@ provider "neo4j" {
 resource "neo4j_user" "user" {
   user = "myuser"
 }
+
+output "user_initial_password" {
+  value = neo4j_user.user.password  
+}
 ```
